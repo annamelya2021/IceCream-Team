@@ -3,4 +3,23 @@
 }
 .advantage__subtitle {
   font-family: $second-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-text-color;
+}
+
+.advantage__title {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  max-width: 200px;
+  margin: 0 auto;
 }
