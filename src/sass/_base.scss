@@ -92,3 +92,16 @@ p {
   @media screen and (min-width: 1280px) {
   }
 }
+.btn {
+  align-items: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 22px;
+  border-style: none;
+  cursor: pointer;
+  background-color: $main-text-color;
+}
