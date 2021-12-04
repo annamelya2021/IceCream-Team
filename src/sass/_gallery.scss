@@ -1,6 +1,6 @@
 .collage {
   height: 122px;
-  background-image: url(../images/collage.jpg), linear-gradient(to bottom, #fff5f6 50%, white 50%);
+  background-image: url(../images/collage.jpg), linear-gradient(to bottom, #fff5f6 40%, white 40%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -10,7 +10,7 @@
   screen and (min-resolution: 2dppx) {
   .collage {
     background-image: url(../images/collage@2x.jpg),
-      linear-gradient(to bottom, #fff5f6 50%, white 50%);
+      linear-gradient(to bottom, #fff5f6 40%, white 40%);
   }
 }
 
@@ -18,7 +18,7 @@
   .collage {
     max-width: 767px;
     background-image: url(../images/collage768.jpg),
-      linear-gradient(to bottom, #fff5f6 50%, white 50%);
+      linear-gradient(to bottom, #fff5f6 40%, white 40%);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
