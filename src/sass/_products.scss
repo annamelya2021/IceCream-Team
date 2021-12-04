@@ -31,7 +31,8 @@
 .products-list{
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
+    
 
     &__title{
         font-family: $second-font;
@@ -44,6 +45,7 @@
         color: $white;
         position: relative;
         padding-bottom: 30px;
+        
     
         
         &::after{
@@ -63,7 +65,8 @@
 
     &__text {
         text-align: center;
-        color: $white
+        color: $white;
+        margin-bottom: 30px;
         
     }
 
@@ -96,11 +99,15 @@
         border-radius: 24px;
         position: relative;
         margin-top: 130px;
-        padding: 160px 42px 40px;
+        padding: 145px 42px 40px;
+
     
+
+
 
         &.item-icecream {
             background-color: $bc-hero;
+            margin-bottom: 16px;
             &::before {
                
                 background-image: url("../images/icecream249.png");
@@ -114,6 +121,7 @@
       }
     }
 }
+
         
         
 
@@ -121,6 +129,7 @@
 
 &.item-icecoffee {
     background-color: #F0D1A5;
+    margin-bottom: 16px;
     
     &::before {
              
@@ -134,9 +143,10 @@
       }
 
 }
+}
 
 
-    }
+    
 
 
     &.item-milkshakes {
@@ -154,21 +164,82 @@
           }
     
     }
-    
-    
-        }
+}
 
-        &::before {
+    
+    &::before {
         content: '';
         position: absolute;
         background-repeat: no-repeat;
         background-size: cover;
         top: 0%;
         transform: translate(0, -50%);
-        width: 249px;
-      height: 252px;
+        width: 250px;
+        height: 250px;
     }
 }
+
+@media screen and (min-width: 320px) {
+    .products-list {
+        &__text{
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        padding-top: 122px;
+        padding-bottom: 112px;
+        &__description {
+            font-size: 26px;
+            line-height: 1.15;
+          }
+          &__title {
+              font-size: 48px;
+              line-height: 1.14;
+              margin-bottom: 39px;
+          }
+    }
+
+    .products-list{
+display: flex;
+margin-left: -20px;
+&__item{
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding: 150px 10px 40px 10px;
+    flex-basis: calc(100% / 3 - 20px);
+
+    &.item-icecoffee {
+        margin-bottom: 0px;}
+        &.item-icecream {
+         margin-bottom: 0px;}
+
+
+    &::before {
+        width: 220px;
+        height: 233px;
+      }
+
+}
+
+
+
+
+        &__button{
+          margin-top: 40px;  
+
+        }
+    }
+}
+
+
+        
+
+       
 
 
 
