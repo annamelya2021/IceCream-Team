@@ -1,9 +1,17 @@
 .hero-section {
   background-color: $bc-hero;
   padding-top: 137px;
+  padding-right: 44px;
   padding-bottom: 160px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 15px;
+    padding-left: 34px;
+    padding-bottom: 28px;
+    overflow: visible;
+  }
 }
 
 .button-hero {
@@ -18,6 +26,10 @@
   z-index: 1;
   position: relative;
   color: $white;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 19px;
+  }
 }
 
 .button-hero--reverse {
@@ -50,6 +62,55 @@
   text-transform: uppercase;
 }
 
+.amount-thumb {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-thumb__names {
+  font-size: 8px;
+  line-height: 1.25;
+  color: $white;
+}
+
+.amount-thumb__names:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.amount {
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  color: $main-text-color;
+  z-index: 2;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.amount::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $white;
+  z-index: -1;
+  top: -4px;
+  left: 40px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .hero__circle {
   background-color: $second-text-color;
   width: 346px;
@@ -58,6 +119,13 @@
   position: absolute;
   bottom: 75px;
   left: 36px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 344px;
+    height: 322px;
+    left: 307px;
+    top: -60px;
+  }
 }
 
 .hero__image {
@@ -65,4 +133,61 @@
   bottom: 0;
   right: 32px;
   z-index: 0;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    right: 247px;
+  }
+}
+
+.hero__image-second {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  z-index: 0;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.hero__block-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__block-second {
+  display: flex;
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+}
+
+.hero__image-milk {
+  margin-left: 34px;
+  position: relative;
+  z-index: 1;
+}
+
+.description-thumb {
+  display: flex;
+  flex-direction: column;
+  padding-top: 74px;
+}
+
+.description-thumb__text {
+  width: 119px;
+  position: relative;
+  font-size: 10px;
+  line-height: 1.5;
+  color: $white;
+  margin-bottom: 7px;
+}
+
+.description-thumb__button {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
 }
