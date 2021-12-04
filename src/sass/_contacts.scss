@@ -1,119 +1,103 @@
-    .button__li {
-   list-style: none;
+.contacts {
+  background-color: white;
+  background-image: linear-gradient(#ffffff 170px, #fff5f6 170px);
+  background-repeat: no-repeat;
+
+  &__cards {
+    // max-width: 320px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 86px 50px 113px 50px;
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  &__card {
+    height: 100%;
+    padding: 43px 20px;
+  }
 }
-    .section {
-       padding-top: 86px;
-       padding-left: 50px;
-    }
-   
-    .contacts-card {
-       display: grid;
-       width: 220px;
-       height: 427px;
 
-       background: #FFFFFF;
-       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-       border-radius: 24px;
-       margin-top: 20px;
-      
+.contacts__title {
+  width: 80px;
+  background-color: #f0d1a5;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 0 0 25px;
+  padding: 0;
+  text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: white;
+}
+.contacts__title--green {
+  width: 160px;
 
-       &__desc{
-         font-style: normal;
-         font-weight: 500;
-         font-size: 12px;
-         
-         text-align: center;
-         letter-spacing: 0.04em;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 0 0 25px;
+  padding: 0;
+  text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: white;
 
-         color: $white;
+  background-color: #c2e297;
+}
+.contacts__content {
+  margin: 0;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
 
-          margin-top: 43px;
-          margin-left: 20px;
-          width: 80px;
-          height: 18px;
-          
-          background: #F0D1A5;
-          border-radius: 4px;
-       }
+.contacts__label {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
 
-       &__des {
-         
-         font-style: normal;
-         font-weight: 500;
-         font-size: 12px;
-         
-         text-align: center;
-         letter-spacing: 0.04em;
+.contacts__text {
+  margin: 10px 0 50px;
+  color: #907e82;
+  text-align: left;
+}
 
-         color: #FFFFFF;
+.contacts__time {
+  margin: 0;
+  color: #ffa5ba;
+}
 
-          margin-top: 43px;
-          margin-left: 20px;
-          width: 130px;
-          height: 18px;
-          
-          background: #C2E297;
-          border-radius: 4px;
-       }
+.schedule__item:first-child {
+  margin-bottom: 10px;
+}
 
-       &__title {
-         
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 2.2;
+.schedule__item:last-child {
+  margin-bottom: 55px;
+}
 
-          margin-left: 20px;
-          letter-spacing: 0.04em;
-
-          color: $text-black;
-       }
-
-       &__text {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 1.5;
-          
-          margin-left: 20px;
-          margin-top: -20px;
-
-          color: $text-grey;
-       }
-
-
-       &__clok {
-          
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 2.2;
-
-          margin-left: 20px;
-          margin-top: -30px;
-          border-bottom: 1px solid #E1E1E1;
-
-          color: $second-text-color;
-       }
-
-       &__mail {
-          
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 1.5;
-
-          margin-left: 20px;
-
-          color: $text-grey;
-
-       }
-    }
-
-    .contacts-button {
-        margin-top: 54px;
-        margin-left: 79px;
-
-    }
-   
-
+.contacts__mail {
+  display: inline-block;
+  margin: 0;
+  color: #907e82;
+  text-decoration: none;
+}
