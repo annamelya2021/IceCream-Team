@@ -108,14 +108,8 @@
     
     &::before {
         background-image: url("../images/icecoffee249.png");
-        content: '';
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        top: 0%;
-    
-        transform: translate(0, -50%);
+        width: 220px;
+        height: 233px;
 
 }
 
