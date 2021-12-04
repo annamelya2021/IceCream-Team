@@ -214,10 +214,50 @@ margin-left: -20px;
     flex-basis: calc(100% / 3 - 20px);
 
     &.item-icecoffee {
-        margin-bottom: 0px;}
-        &.item-icecream {
-         margin-bottom: 0px;}
+        margin-bottom: 0px;
+    
+        &::before {
+            background-image: url("../images/icecoffee220.png");
+    
+            @media screen and (min-device-pixel-ratio: 2),
+              screen and (min-resolution: 192dpi),
+              screen and (min-resolution: 2dppx) {
+              background-image: url("../images/icecoffee220x2.png");
+            }
 
+    }
+}
+        
+&.item-icecream {
+    margin-bottom: 0px;
+    &::before {
+       background-image: url("../images/icecream220.png");
+
+       @media screen and (min-device-pixel-ratio: 2),
+         screen and (min-resolution: 192dpi),
+         screen and (min-resolution: 2dppx) {
+         background-image: url("../images/icecream220x2.png");
+       }
+
+}
+   
+   }
+
+
+   &.item-milkshakes {
+    margin-bottom: 0px;
+    &::before {
+       background-image: url("../images/milkshakes220.png");
+
+       @media screen and (min-device-pixel-ratio: 2),
+         screen and (min-resolution: 192dpi),
+         screen and (min-resolution: 2dppx) {
+         background-image: url("../images/milkshakes220x2.png");
+       }
+
+}
+   
+   }
 
     &::before {
         width: 220px;
@@ -225,9 +265,6 @@ margin-left: -20px;
       }
 
 }
-
-
-
 
         &__button{
           margin-top: 40px;  
