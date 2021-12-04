@@ -1,6 +1,7 @@
 .products {
     padding-top: 121px;
     padding-bottom: 98px;
+    background-color: wheat;
 
     &__description{
         font-family: $second-font;
@@ -50,7 +51,7 @@
             top: 100%;
             left: 50%;
            transform: translate(-50%, -50%);
-           //background-image: url("../src/images/products-sprite.svg#products-dots");
+           background-image: url("../images/products-dots.svg");
         }
 
     }
@@ -66,7 +67,7 @@
     height: 40px;
     border-radius: 50%;
     border: none;
-    background-color: $white;
+    background-color: tomato;
 
 }
 .products-list__button-icon{
