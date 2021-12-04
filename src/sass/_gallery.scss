@@ -1,0 +1,48 @@
+.collage {
+  height: 122px;
+  background-image: url(../images/collage.jpg), linear-gradient(to bottom, #fff5f6 40%, white 40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .collage {
+    background-image: url(../images/collage@2x.jpg),
+      linear-gradient(to bottom, #fff5f6 40%, white 40%);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .collage {
+    max-width: 767px;
+    background-image: url(../images/collage768.jpg),
+      linear-gradient(to bottom, #fff5f6 40%, white 40%);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .collage {
+      background-image: url(../images/collage768x2.jpg),
+        linear-gradient(to bottom, #fff5f6 50%, white 50%);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .collage {
+    max-width: 1600px;
+    background-image: url(../images/collagedesk.jpg),
+      linear-gradient(to bottom, #fff5f6 50%, white 50%);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .collage {
+      background-image: url(../images/collagedeskx2.jpg),
+        linear-gradient(to bottom, #fff5f6 50%, white 50%);
+    }
+  }
+}

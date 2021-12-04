@@ -1,25 +1,97 @@
-.bg-splash {
-  background-image: url();
-}
-.advantage__subtitle {
-  font-family: $second-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $second-text-color;
+.bg-pink {
+  background-color: $bc-pink;
 }
 
-.advantage__title {
-  font-family: $second-font;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-  max-width: 200px;
-  margin: 0 auto;
+.text-wrap {
+}
+
+.advantage {
+  &__subtitle {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-text-color;
+    padding-top: 223px;
+    padding-bottom: 15px;
+  }
+
+  &__title {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 26px;
+  }
+  &__text-first {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: $text-black;
+    margin-bottom: 47px;
+
+    width: 220px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text-second {
+    white-space: wrap;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #907e82;
+
+    width: 220px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.made-count {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+
+  &__list {
+    width: 230px;
+
+    @media screen and (min-width: 768px) {
+      width: 180px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 330px;
+    }
+  }
+
+  &__title {
+    font-family: Titan One;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.7;
+  }
 }
