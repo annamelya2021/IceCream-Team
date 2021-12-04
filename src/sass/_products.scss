@@ -42,6 +42,7 @@
         letter-spacing: 0.04em;
         color: $white;
         position: relative;
+    }
         
         &::after{
             position: absolute;
@@ -54,23 +55,59 @@
            background-image: url("../images/products-dots.svg");
         }
 
+    
+
+    &__text {
+        text-align: center;
+        color: $white
+        
     }
 
+    &__button-icon{
+        width: 15px;
+        height: 15px;
+        
+    }
+    &__button{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+    
+    }
 }
 
 
+    .products-list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        position: relative;
 
-
-
-.products-list__button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: tomato;
+        &.item-icecream {
+            background-color: $bc-hero;
+            &::before {
+                background-image: url("../images/icecream249.png");
+        
+        }
 
 }
-.products-list__button-icon{
-    width: 15px;
-    height: 15px;
-}
+
+
+    }
+
+
+
+
+
+
+
+
