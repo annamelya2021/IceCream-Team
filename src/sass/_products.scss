@@ -1,7 +1,7 @@
 .products {
     padding-top: 121px;
     padding-bottom: 98px;
-    background-color: wheat;
+    //background-color: wheat;
 
     &__description{
         font-family: $second-font;
@@ -42,7 +42,7 @@
         letter-spacing: 0.04em;
         color: $white;
         position: relative;
-    }
+    
         
         &::after{
             position: absolute;
@@ -54,6 +54,8 @@
            transform: translate(-50%, -50%);
            background-image: url("../images/products-dots.svg");
         }
+    }
+    
 
     
 
@@ -101,8 +103,29 @@
 
 }
 
+&.item-icecoffee {
+    background-color: #F0D1A5;
+    
+    &::before {
+        background-image: url("../images/icecoffee249.png");
+
+}
+
 
     }
+
+
+    &.item-milkshakes {
+        background-color:  #c2e297;
+        
+        &::before {
+            background-image: url("../images/milkshakes249.png");
+    
+    }
+    
+    
+        }
+}
 
 
 
