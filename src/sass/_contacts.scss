@@ -104,3 +104,66 @@
     color: #ffa5ba;
   }
 }
+
+
+.button__div {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 54px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-contacts {
+    margin-top: 10px;
+}
+
+  &-contacts__but1 {
+      border-radius: 22px;
+      width: 161.45px;
+      height: 44px;
+      background: #D41342;
+      border: none;
+  }
+
+  &-contacts__but2 {
+    border-radius: 22px;
+    width: 161px;
+    height: 44px;
+    background: #FFFFFF;
+    border: none;
+  }
+
+  .button-text__white{
+     font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+
+      font-size: 16px;
+      line-height: 21px;
+
+      align-items: center;
+      text-align: center;
+
+      color: $white;
+  }
+
+  .button-text__pink{
+       font-family: DM Sans;
+       font-style: normal;
+       font-weight: bold;
+
+       font-size: 16px;
+       line-height: 21px;
+
+       align-items: center;
+       text-align: center;
+
+       color: $main-text-color;
+  }
+
+}
