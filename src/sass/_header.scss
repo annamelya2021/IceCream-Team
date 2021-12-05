@@ -3,18 +3,55 @@
   background-color: $bc-hero;
   padding-top: 6px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 34px;
     padding-top: 37px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 37px;
+    padding-left: 46px;
+  }
+}
+
+.main-nav {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
   }
 }
 
 .main-nav__list {
   display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.main-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $white;
+}
+
+.main-nav__link--current {
+  color: $main-text-color;
 }
 
 .header-button {
   display: none;
+}
+
+.logo {
+  margin-right: 110px;
 }
 
 .logo__img {
@@ -30,13 +67,13 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 52px;
     right: 224px;
     z-index: 1;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -99,11 +136,11 @@
 }
 
 .burger-menu__btn--outside {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     position: absolute;
     width: 160px;
     z-index: 1;
@@ -112,10 +149,20 @@
     padding-left: 16px;
     padding-right: 37px;
   }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 38px;
+    right: 115px;
+    width: 159px;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 37px;
+  }
 }
 
 .burger-menu__btn-piece--outside {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 18px;
     right: 37px;
