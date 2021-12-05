@@ -110,6 +110,7 @@
   padding: 10px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .burger-menu__btn {
@@ -126,6 +127,14 @@
   position: relative;
   padding-right: 40px;
   margin-bottom: 19px;
+  cursor: pointer;
+}
+
+.burger-menu__btn {
+  &:hover,
+  &:focus {
+    background-color: $button-bc-hover;
+  }
 }
 
 .burger-menu__btn-piece {
@@ -148,6 +157,7 @@
     right: 34px;
     padding-left: 16px;
     padding-right: 37px;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 1200px) {
