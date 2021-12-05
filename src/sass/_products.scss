@@ -1,5 +1,5 @@
 .products {
-    padding-top: 121px;
+    padding-top: 120px;
     padding-bottom: 98px;
     //background-color: wheat;
 
@@ -31,7 +31,7 @@
 .products-list{
     margin-right: auto;
     margin-left: auto;
-    width: auto;
+   
     //padding-bottom: 30px;
     
 
@@ -45,13 +45,13 @@
         letter-spacing: 0.04em;
         color: $white;
         position: relative;
-        padding-bottom: 30px;
+        //padding-bottom: 30px;
         
     
         
         &::after{
-            position: absolute;
             content: '';
+            position: absolute;
             width: 26px;
             height: 6px;
             top: 100%;
@@ -68,6 +68,7 @@
     &__text {
         text-align: center;
         color: $white;
+        letter-spacing: 0.04em
         //margin-bottom: 30px;
         
     }
@@ -127,14 +128,13 @@
     }
 }
 
-        
-        
+          
 
 
 
 &.item-icecoffee {
     background-color: #F0D1A5;
-    margin-bottom: 16px;
+    //margin-bottom: 16px;
     
     &::before {
              
@@ -149,9 +149,7 @@
 
 }
 }
-
-
-    
+   
 
 
     &.item-milkshakes {
@@ -185,12 +183,21 @@
 }
 
 @media screen and (min-width: 320px) {
+
+    .products-container{
+        width: 320px;
+        margin: 0 auto
+    }
+
+
     .products-list {
         &__title{
             padding-bottom: 30px;
         }
         &__text {
             margin-top: 30px;
+            font-size: 14px;
+      line-height: 1.52;
         }
         &__button{
             margin-top: 30px;
@@ -213,6 +220,14 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .products-container{
+        width: 768px;
+       padding: 0 34px
+    }
+
+
+
     .products {
         padding-top: 122px;
         padding-bottom: 112px;
@@ -228,17 +243,45 @@
     }
 
     .products-list{
-display: flex;
-margin-left: -20px;
-&__item{
-    margin-top: 150px;
-    margin-left: 20px;
-    margin-bottom: 0;
-    padding: 150px 10px 40px 10px;
-    flex-basis: calc(100% / 3 - 20px);
+    display: flex;
+    margin-left: -20px;
 
+    &__button{
+        margin-top: 40px;
+    }
+
+    .products-list__item {
+        margin-top: 150px;
+        margin-left: 20px;
+    
+        padding: 150px 10px 40px 10px;
+    
+        flex-basis: calc(100%/3-20px);
+    
+        &::before {
+          width: 220px;
+          height: 233px;
+        }
+
+
+        &.item-icecream {
+            //margin-bottom: 0px;
+            &::before {
+               background-image: url("../images/icecream220.png");
+        
+               @media screen and (min-device-pixel-ratio: 2),
+                 screen and (min-resolution: 192dpi),
+                 screen and (min-resolution: 2dppx) {
+                 background-image: url("../images/icecream220x2.png");
+               }
+        
+        }
+           
+           }
+
+        
     &.item-icecoffee {
-        margin-bottom: 0px;
+        //margin-bottom: 0px;
     
         &::before {
             background-image: url("../images/icecoffee220.png");
@@ -251,25 +294,9 @@ margin-left: -20px;
 
     }
 }
-        
-&.item-icecream {
-    margin-bottom: 0px;
-    &::before {
-       background-image: url("../images/icecream220.png");
 
-       @media screen and (min-device-pixel-ratio: 2),
-         screen and (min-resolution: 192dpi),
-         screen and (min-resolution: 2dppx) {
-         background-image: url("../images/icecream220x2.png");
-       }
-
-}
-   
-   }
-
-
-   &.item-milkshakes {
-    margin-bottom: 0px;
+&.item-milkshakes {
+    //margin-bottom: 0px;
     &::before {
        background-image: url("../images/milkshakes220.png");
 
@@ -278,55 +305,31 @@ margin-left: -20px;
          screen and (min-resolution: 2dppx) {
          background-image: url("../images/milkshakes220x2.png");
        }
-
 }
-   
-   }
-
-    &::before {
-        width: 220px;
-        height: 233px;
-      }
-
+}
+}
+}
 }
 
-        &__button{
-          margin-top: 40px;  
+@media screen and (min-width: 1280px) {
+.products {
 
-        }
-    }
 }
 
-@media screen and (max-width: 480px){
-    .products-list__item {
-        &.item-icecream,&.item-icecoffee,&.item-milkshakes{
-        max-width: 220px;
-        max-height: 485px;
-        
+
+
+}
        
-    }
-}
 
-}
+      
 
-@media screen and (min-width: 481px) and (max-width: 767px){
-    .products-list{
-        display: flex;
-        margin-left: -20px;}
 
-    .products-list__item {
-        &.item-icecream,&.item-icecoffee,&.item-milkshakes{
-        width: 220px;
-        height: 485px;
-        margin-left: auto;
-        margin-right: auto;
-        flex-basis: calc(100% / 3 - 20px);
-        margin-left: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-}
+
+
+
+
+
+
         
 
        
