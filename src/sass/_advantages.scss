@@ -1,17 +1,23 @@
 .bg-pink {
   background-color: $bc-pink;
   position: relative;
+  z-index: -2;
 }
 
 .splash {
   background-image: url(../images/advantages/splash1x.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 133px;
+  left: 0;
+  bottom: 46%;
+  z-index: -1;
+
   position: absolute;
 }
+
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
@@ -22,7 +28,6 @@
 
 @media screen and (min-width: 480px) {
   .splash {
-    max-width: 767px;
     display: none;
   }
 
@@ -36,8 +41,8 @@
 
 @media screen and (min-width: 768px) {
   .splash {
+    height: 534px;
     display: block;
-    max-width: 1600px;
 
     background-image: url(../images/advantages/desksplash1x.png);
   }
@@ -52,6 +57,13 @@
 }
 
 .advantage {
+  margin-bottom: 18px;
+  &__wrap {
+    @media screen and(min-width: 768px) {
+      display: flex;
+    }
+  }
+
   &__subtitle {
     font-family: $second-font;
     font-weight: 400;
@@ -62,6 +74,10 @@
     color: $second-text-color;
     padding-top: 223px;
     padding-bottom: 15px;
+
+    @media screen and(min-width: 480px) {
+      padding-top: 130px;
+    }
   }
 
   &__title {
@@ -76,6 +92,10 @@
     max-width: 200px;
     margin: 0 auto;
     padding-bottom: 26px;
+    @media screen and(min-width: 480px) {
+      max-width: 100vw;
+      padding-bottom: 0;
+    }
   }
   &__cow-image {
     background-image: url(../images/advantages/cow1x.png);
@@ -94,7 +114,10 @@
 
   @media screen and (min-width: 480px) {
     .advantage__cow-image {
-      max-width: 767px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      width: 340px;
       height: 339px;
       background-image: url(../images/advantages/tubcow1x.png);
     }
@@ -110,7 +133,7 @@
 
   @media screen and (min-width: 768px) {
     .advantage__cow-image {
-      max-width: 1600px;
+      width: 516px;
       height: 516px;
       background-image: url(../images/advantages/deskcow1x.png);
     }
@@ -124,7 +147,27 @@
     }
   }
 
+  &__wrap-text {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+      margin-left: 17px;
+      width: 340px;
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 463px;
+      margin-left: 17px;
+    }
+  }
+
   &__text-first {
+    width: 100%;
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
@@ -132,32 +175,30 @@
     color: $text-black;
     margin-bottom: 47px;
 
-    width: 220px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   &__text-second {
-    white-space: wrap;
+    width: 100%;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.6;
     color: #907e82;
 
-    width: 220px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 27px;
   }
 }
 
 .made-count {
   padding-bottom: 97px;
+  @media screen and (min-width: 480px) {
+  }
 
   @media screen and (min-width: 768px) {
-    display: flex;
   }
   @media screen and (min-width: 1280px) {
   }
@@ -185,6 +226,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -192,9 +234,37 @@
     font-size: 12px;
     line-height: 1.7;
   }
+
+  &__image1 {
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../images/advantages/icon1.svg);
+    margin-bottom: 16px;
+  }
+
+  &__image2 {
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../images/advantages/icon2.svg);
+    margin-bottom: 16px;
+  }
+  &__image3 {
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../images/advantages/icon3.svg);
+    margin-bottom: 16px;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 42px;
+  }
 }
 
-.advantage__btn {
+.advantage-btn {
+  display: flex;
   text-align: center;
   border: none;
   width: 176px;
@@ -205,6 +275,14 @@
   font-family: inherit;
   color: $main-text-color;
   font-weight: 700;
-  padding-right: 40px;
-  margin-bottom: 19px;
+  padding-left: 39px;
+  margin-bottom: 38px;
+
+  &__image {
+    margin-left: 14px;
+  }
+}
+
+.bg-pink {
+  position: relative;
 }
