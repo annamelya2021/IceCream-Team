@@ -186,7 +186,9 @@
 
     .products-container{
         width: 320px;
-        margin: 0 auto
+        margin: 0 auto;
+        padding-left:20px;
+        padding-right:20px;
     }
 
 
@@ -222,8 +224,8 @@
 @media screen and (min-width: 768px) {
 
     .products-container{
-        width: 768px;
-       padding: 0 34px
+    width: 768px;
+    padding: 0 34px
     }
 
 
@@ -313,13 +315,96 @@
 
 @media screen and (min-width: 1280px) {
 .products {
+        padding: 127px 0 119px;
+        &__description {
+          font-size: 30px;
+}
+
+&__title{
+    font-size: 58px;
+    margin-bottom: 49px;
+}
 
 }
 
+.products-list {
 
+    &__title {
+        padding-top: 40px;
+        font-size: 30px
 
 }
+
+&__title {
+    font-size: 16px;
+}
+
+&__button {
+    margin-top: 60px;
+  }
+
+}
+
+.products-list__item {
+    margin-top: 210px;
+
+    padding: 160px 40px 40px 50px;
+
+    &::before {
+      width: 335px;
+      height: 335px;
+    }
+
+    &.item-icecream {
+        //margin-bottom: 0px;
+        &::before {
+           background-image: url("../images/icecream335.png");
+    
+           @media screen and (min-device-pixel-ratio: 2),
+             screen and (min-resolution: 192dpi),
+             screen and (min-resolution: 2dppx) {
+             background-image: url("../images/icecream335x2.png");
+           }
+    
+    }
        
+       }
+
+    
+&.item-icecoffee {
+    //margin-bottom: 0px;
+
+    &::before {
+        background-image: url("../images/icecoffee337.png");
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url("../images/icecoffee337x2.png");
+        }
+
+}
+}
+
+&.item-milkshakes {
+//margin-bottom: 0px;
+&::before {
+   background-image: url("../images/milkshakes335.png");
+
+   @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+     screen and (min-resolution: 2dppx) {
+     background-image: url("../images/milkshakes335x2.png");
+   }
+}
+}
+}
+}
+
+
+
+
+
 
       
 
