@@ -271,3 +271,29 @@
     height: 44px;
   }
 }
+
+
+@media screen and (min-width: 1280px){
+
+  .contacts{
+
+    &__list{
+      margin-left: -30px;
+    }
+
+    &__item{
+      width: 330px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+    }
+
+    &__cards {
+      padding: 119px 115px 0px 115px;
+      width: 1280px;
+    }
+
+
+  }
+
+
+}
