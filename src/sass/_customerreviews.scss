@@ -50,8 +50,8 @@ body {
   background-color: white;
   background-size: cover;
   border-radius: unset;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
 }
 
 // .swiper-pagination {
@@ -163,7 +163,8 @@ body {
   text-align: center;
 }
 
-.slider-dots__dot {
+.slider-dots__dot::after {
+  content: '';
   display: inline-block;
   width: 4px;
   height: 4px;
