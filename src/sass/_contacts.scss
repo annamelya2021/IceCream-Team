@@ -18,10 +18,12 @@
     background-color: #ffffff;
     margin-bottom: 20px;
   }
+
   &__card {
     height: 100%;
     padding: 43px 20px;
   }
+
 
   &__content {
     margin: 0;
@@ -31,6 +33,7 @@
     font-size: 12px;
     line-height: 18px;
   }
+
   &__title {
     width: 80px;
     background-color: #f0d1a5;
@@ -47,6 +50,7 @@
     line-height: 16px;
     letter-spacing: 0.04em;
     color: #ffffff;
+
     &--green {
       width: 160px;
 
@@ -67,6 +71,7 @@
       background-color: #c2e297;
     }
   }
+
   &__label {
     font-size: 12px;
     line-height: 1.86;
@@ -77,12 +82,36 @@
     margin: 10px 0 50px;
     color: #907e82;
     text-align: left;
+    
+  }
+
+  &__border {
+    margin-top: -23px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+
+    width: 185px;
+    height: 0px;
+
+    border: 1px solid #E1E1E1;
+  }
+
+  &__border1 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+    
+    width: 185px;
+    height: 0px;
+
+    border: 1px solid #E1E1E1;
   }
 
   &__time {
     margin: 0;
     color: #ffa5ba;
   }
+
   &__mail {
     display: inline-block;
     margin: 0;
