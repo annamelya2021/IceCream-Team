@@ -2,19 +2,35 @@
   background-color: white;
   background-image: linear-gradient(#ffffff 176px, #fff5f6 176px);
   background-repeat: no-repeat;
- 
+  
 
+  background-image: linear-gradient(
+    0deg,
+    transparent 62px,
+    #e1e1e1 62px,
+    #e1e1e1 63px,
+    transparent 63px,
+    transparent 204px,
+    #e1e1e1 204px,
+    #e1e1e1 205px,
+    transparent 205px,
+    transparent 100%
+  );
   
   
   
 
   &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     //  min-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    padding: 86px 50px 113px 50px;
+    padding: 86px 50px 0px 50px;
     //width: 220px;
-    height: 1600px;
+    //height: 100%;
+    
     
   }
 
@@ -26,8 +42,8 @@
     margin-bottom: 20px;
   }
   &__card {
-    height: 100%;
-    padding: 43px 20px;
+    //height: 100%;
+    padding: 43px 17px;
   }
 
   &__content {
@@ -84,6 +100,7 @@
     margin: 10px 0 50px;
     color: #907e82;
     text-align: left;
+    
   }
 
   &__time {
@@ -100,8 +117,8 @@
   &__list{
 
     
-        width: 220px;
-        height: 427px;
+        //width: 220px;
+        //height: 427px;
         margin-right: auto;
         margin-left: auto;
   }
@@ -112,7 +129,7 @@
     margin-bottom: 10px;
   }
   &__item:last-child {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   &__time {
@@ -123,10 +140,14 @@
 
 
 .button__div {
+  
   margin-left: auto;
   margin-right: auto;
 
   margin-top: 54px;
+  margin-bottom: 113px;
+
+ 
 }
 
 .button {
@@ -134,9 +155,10 @@
   align-items: center;
   justify-content: center;
 
-  &-contacts {
-    margin-top: 10px;
-}
+  
+
+
+
 
   &-contacts__but1 {
       border-radius: 22px;
@@ -144,6 +166,7 @@
       height: 44px;
       background: #D41342;
       border: none;
+      margin-bottom: 10px;
   }
 
   &-contacts__but2 {
@@ -185,6 +208,99 @@
 }
 
 
-@media screen and (min-width: 320px) {
+
+
+
+@media screen and (min-width: 768px) {
+
+  .contacts__list{
+display: flex;
+margin-left: -20px;
+}
+
+.contacts__item{
+  
+  margin-left: 20px;
+  flex-basis: calc(100%/3-20px);
+ 
+}
+
+.contacts__cards{
+  padding: 119px 36px 0px 36px;
+  width: 768px;
+}
+
+.contacts__text{
+  font-size: 14px;
+}
+
+.contacts__card{
+  padding: 50px 30px 50px 31px;
+}
+
+.contacts__title{
+  margin-bottom: 30px;
+  font-size: 16px;
+  width: 73px;
+  line-height: 28px;
+
+  &--green{
+    margin-bottom: 30px;
+    width: 138px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.contacts__text{
+  margin-top: 14px;
+  margin-bottom: 60px;
+}
+
+.schedule__item:first-child {
+  margin-bottom: 16px;
 
 }
+
+
+.schedule__item:last-child {
+  margin-bottom: 60px;
+}
+
+.contacts__label{
+  font-size: 14px;}
+
+  .schedule__time{
+    font-size: 14px;
+    line-height: 26px
+  }
+
+  .contacts__mail{
+    font-size: 14px;
+    line-height: 26px;
+
+  }
+
+  .button__div{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .button-contacts__but1{
+    margin-bottom: 0;
+    margin-right: 15px;
+    width: 192.45px;
+      height: 44px;
+  }
+
+
+  .button-contacts__but2 {
+    width: 175px;
+    height: 44px;
+  
+  }
+
+
+}
+
