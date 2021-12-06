@@ -183,6 +183,8 @@
   font-size: 8px;
   line-height: 1.25;
   color: $white;
+  position: relative;
+  z-index: 2;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
