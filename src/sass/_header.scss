@@ -6,12 +6,17 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 34px;
     padding-top: 37px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
     padding-left: 46px;
   }
+}
+
+.header-sec {
+  background-color: $bc-hero;
 }
 
 .main-nav {
