@@ -11,6 +11,7 @@
     padding-left: 34px;
     padding-bottom: 28px;
     overflow: visible;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -21,6 +22,10 @@
     overflow: visible;
     max-width: 1280px;
   }
+}
+
+.bgc-hero {
+  background-color: $bc-hero;
 }
 
 .hero__title {
