@@ -3,19 +3,6 @@
   background-image: linear-gradient(#ffffff 176px, #fff5f6 176px);
   background-repeat: no-repeat;
 
-  background-image: linear-gradient(
-    0deg,
-    transparent 62px,
-    #e1e1e1 62px,
-    #e1e1e1 63px,
-    transparent 63px,
-    transparent 204px,
-    #e1e1e1 204px,
-    #e1e1e1 205px,
-    transparent 205px,
-    transparent 100%
-  );
-
   &__cards {
     display: flex;
     flex-direction: column;
@@ -29,7 +16,7 @@
   }
 
   &__item {
-    width: 220px;
+    min-width: 220px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     background-color: #ffffff;
@@ -272,58 +259,48 @@
   }
 }
 
-
-@media screen and (min-width: 1280px){
-
-  .contacts{
-
-    &__title{
+@media screen and (min-width: 1280px) {
+  .contacts {
+    &__title {
       margin-bottom: 32px;
 
-      &--green{
+      &--green {
         margin-bottom: 32px;
       }
     }
 
-    &__list{
+    &__list {
       margin-left: -30px;
     }
 
-    &__item{
-      width: 330px;
+    &__item {
+      min-width: 330px;
       margin-left: 30px;
       flex-basis: calc(100% / 3 - 30px);
     }
 
     &__cards {
       padding: 119px 115px 0px 115px;
-      width: 1280px;
+      min-width: 1280px;
     }
 
-   
-  
-
-    &__label{
+    &__label {
       font-size: 16px;
     }
-&__text{
-  margin-top: 10px;
-  margin-bottom: 64px;
+    &__text {
+      margin-top: 10px;
+      margin-bottom: 64px;
+    }
 
-}
+    &__label {
+      font-size: 16px;
+    }
 
-&__label {
-  font-size: 16px;
-}
-
-&__mail {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-
+    &__mail {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
-
 
   .schedule__time {
     font-size: 16px;
@@ -338,10 +315,7 @@
     margin-bottom: 15px;
   }
 
-
-
   .contacts__card {
     padding: 52px 43px 62px 43px;
   }
-
 }
