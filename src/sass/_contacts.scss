@@ -172,6 +172,10 @@
     position: absolute;
     top: 18px;
     right: 26px;
+
+    @media screen and (max-width: 767px) {
+      right: 19px;
+    }
   }
 
   .button-text__white {
