@@ -133,17 +133,45 @@
     border-radius: 22px;
     width: 161.45px;
     height: 44px;
+    padding-right: 20px;
     background: #d41342;
     border: none;
     margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $button-red-bc-hover;
+    }
   }
 
   &-contacts__but2 {
     border-radius: 22px;
     width: 161px;
     height: 44px;
+    padding-right: 20px;
     background: #ffffff;
     border: none;
+    position: relative;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $button-bc-hover;
+    }
+  }
+
+  .button__img-pink {
+    position: absolute;
+    top: 19px;
+    right: 36px;
+  }
+
+  .button__img-white {
+    position: absolute;
+    top: 18px;
+    right: 26px;
   }
 
   .button-text__white {
