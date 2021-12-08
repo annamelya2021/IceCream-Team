@@ -2,14 +2,13 @@
   <header class="page-header container">
     <nav class="main-nav">
       <a href="#" class="logo">
-        <img src="../src/images/logo.png" class="logo__img" alt="logo image" />
+        <img
+          src="../src/images/logo.png"
+          class="logo__img"
+          alt="logo image"
+          srcset="../src/images/logo.png 1x, ../src/images/logo2x.png 2x"
+        />
       </a>
-
-      <button type="button" class="burger-menu__btn burger-menu__btn--outside">
-        Buy now<span class="burger-menu__btn-piece burger-menu__btn-piece--outside">
-          <img src="../src/images/btn-piece.png" alt="button" width="7" height="9" />
-        </span>
-      </button>
 
       <button type="button" class="burger-btn" data-menu-open>
         <img src="../src/images/Burger.png" alt="button open menu" width="22" height="12" />
@@ -63,6 +62,11 @@
         </li>
       </ul>
     </nav>
+    <button type="button" class="burger-menu__btn burger-menu__btn--outside">
+      Buy now<span class="burger-menu__btn-piece burger-menu__btn-piece--outside">
+        <img src="../src/images/btn-piece.png" alt="button" width="7" height="9" />
+      </span>
+    </button>
     <button type="button" class="header-button"></button>
   </header>
 </section>

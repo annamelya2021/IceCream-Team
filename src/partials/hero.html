@@ -1,5 +1,5 @@
-<div class="bgc-hero">
-  <section class="hero-section container">
+<section class="bgc-hero">
+  <div class="hero-section container">
     <div class="hero__block-first">
       <div>
         <h1 class="hero__title">
@@ -7,25 +7,29 @@
           made with <br />
           <span class="hero__title-piece">passion</span>
         </h1>
-        <a href="#products"><button type="button" class="button-hero">Products</button></a>
-        <a href="#advantages"
-          ><button type="button" class="button-hero button-hero--reverse">How it’s made?</button></a
-        >
+        <a href="#products" class="button-hero">Products</a>
+        <a href="#advantages" class="button-hero button-hero--reverse">How it’s made?</a>
       </div>
       <div class="amount-thumb">
-        <span class="amount">16<br /></span>
-        <span class="amount-thumb__names">cafes</span>
-        <span class="amount">23<br /></span>
-        <span class="amount-thumb__names">food trucks</span>
+        <p class="amount">16<br /></p>
+        <p class="amount-thumb__names">cafes</p>
+        <p class="amount">23<br /></p>
+        <p class="amount-thumb__names">food trucks</p>
       </div>
     </div>
 
     <div class="hero__circle"></div>
-    <img class="hero__image" src="../src/images/ice-cream-hero.png" alt="ice cream" />
+    <img
+      class="hero__image"
+      src="../src/images/ice-cream-hero.png"
+      alt="ice cream"
+      srcset="../src/images/ice-cream-hero.png 1x, ../src/images/ice-cream-hero2x.png 2x"
+    />
     <img
       class="hero__image-second"
       src="../src/images/woman-hero.png"
       alt="woman licks ice cream"
+      srcset="../src/images/woman-hero.png 1x, ../src/images/woman-hero2x.png 2x"
     />
     <div class="hero__block-second">
       <img
@@ -34,20 +38,15 @@
         alt="jar with milk"
         width="188"
         height="191"
+        srcset="../src/images/milk-hero.png 1x, ../src/images/milk-hero2x.png 2x"
       />
       <div class="description-thumb">
         <p class="description-thumb__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="description-thumb__button">
-          <img
-            class="description-thumb__button-img"
-            src="../src/images/arrow-hero.png"
-            alt="arrow"
-          />
-        </button>
+        <button type="button" class="description-thumb__button">&xrarr;</button>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
