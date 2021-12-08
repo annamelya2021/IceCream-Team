@@ -22,7 +22,6 @@
     background-color: #ffffff;
     margin-bottom: 20px;
   }
-
   &__card {
     //height: 100%;
     padding: 43px 17px;
@@ -79,24 +78,15 @@
   }
 
   &__text {
-    margin: 10px 0 23px;
+    margin: 10px 0 50px;
     color: #907e82;
     text-align: left;
-  }
-
-  &__text::after {
-    margin-top: 23px;
-    content: '';
-    display: inline-block;
-    width: 100%;
-    border: 1px solid #e1e1e1;
   }
 
   &__time {
     margin: 0;
     color: #ffa5ba;
   }
-
   &__mail {
     display: inline-block;
     margin: 0;
@@ -117,22 +107,13 @@
     margin-bottom: 10px;
   }
   &__item:last-child {
-    // margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   &__time {
     margin: 0;
     color: #ffa5ba;
   }
-}
-
-.schedule::after {
-  margin-top: 23px;
-  margin-bottom: 23px;
-  content: '';
-  display: inline-block;
-  width: 100%;
-  border: 1px solid #e1e1e1;
 }
 
 .button__div {
@@ -191,10 +172,6 @@
     position: absolute;
     top: 18px;
     right: 26px;
-
-    @media screen and (max-width: 767px) {
-      right: 19px;
-    }
   }
 
   .button-text__white {
@@ -246,10 +223,6 @@
     font-size: 14px;
   }
 
-  .contacts__text::after {
-    margin-top: 28px;
-  }
-
   .contacts__card {
     padding: 50px 30px 50px 30px;
   }
@@ -270,18 +243,15 @@
 
   .contacts__text {
     margin-top: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .schedule__item:first-child {
     margin-bottom: 16px;
   }
 
-  // .schedule__item:last-child {
-  //   margin-bottom: 60px;
-  // }
-  .schedule::after {
-    margin: 28px 0;
+  .schedule__item:last-child {
+    margin-bottom: 60px;
   }
 
   .contacts__label {
@@ -347,12 +317,9 @@
     }
     &__text {
       margin-top: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 64px;
     }
 
-    &__text::after {
-      margin-top: 30px;
-    }
     &__label {
       font-size: 16px;
     }
@@ -368,12 +335,8 @@
     line-height: 30px;
   }
 
-  // .schedule__item:last-child {
-  //   margin-bottom: 64px;
-  // }
-
-  .schedule::after {
-    margin: 30px 0;
+  .schedule__item:last-child {
+    margin-bottom: 64px;
   }
 
   .schedule__item:first-child {
