@@ -1,3 +1,5 @@
+
+
 .contacts {
   background-color: white;
   background-image: linear-gradient(#ffffff 176px, #fff5f6 176px);
@@ -83,6 +85,14 @@
     text-align: left;
   }
 
+  &__text::after {
+    margin-top: 23px;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+  }
+
   &__time {
     margin: 0;
     color: #ffa5ba;
@@ -107,13 +117,22 @@
     margin-bottom: 10px;
   }
   &__item:last-child {
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
 
   &__time {
     margin: 0;
     color: #ffa5ba;
   }
+}
+
+.schedule::after {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e1e1e1;
 }
 
 // .button__div {
@@ -231,6 +250,10 @@
     font-size: 14px;
   }
 
+  .contacts__text::after {
+    margin-top: 28px;
+  }
+
   .contacts__card {
     padding: 50px 30px 50px 30px;
   }
@@ -258,8 +281,12 @@
     margin-bottom: 16px;
   }
 
-  .schedule__item:last-child {
-    margin-bottom: 60px;
+ //.schedule__item:last-child {
+   // margin-bottom: 60px;
+  //}
+
+  .schedule::after {
+    margin: 28px 0;
   }
 
   .contacts__label {
@@ -325,7 +352,10 @@
     }
     &__text {
       margin-top: 10px;
-      margin-bottom: 64px;
+      margin-bottom: 30px;
+    }
+    .contacts__text::after {
+      margin-top: 30px;
     }
 
     &__label {
@@ -343,10 +373,12 @@
     line-height: 30px;
   }
 
-  .schedule__item:last-child {
-    margin-bottom: 64px;
+  //.schedule__item:last-child {
+   // margin-bottom: 64px;
+  //}
+  .schedule::after {
+    margin: 30px 0;
   }
-
   .schedule__item:first-child {
     margin-bottom: 15px;
   }
