@@ -116,18 +116,26 @@
   }
 }
 
-.button__div {
+// .button__div {
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   margin-top: 54px;
+//   margin-bottom: 113px;
+// }
+
+.button {
   margin-left: auto;
   margin-right: auto;
 
   margin-top: 54px;
   margin-bottom: 113px;
-}
 
-.button {
-  display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   &-contacts__but1 {
     border-radius: 22px;
