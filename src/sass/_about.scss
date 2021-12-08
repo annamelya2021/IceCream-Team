@@ -27,16 +27,15 @@
   background-color: $bc-pink;
 }
 
-.splash {
-  background-image: url(../images/advantages/splash1x.png);
-  display: inline-flex;
-  min-height: 133px;
-  width: 100%;
-
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// .splash {
+//   background-image: url(../images/advantages/splash1x.png);
+//   display: inline-flex;
+//   min-height: 100%;
+//   width: 100vw;
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
 // @media screen and (min-device-pixel-ratio: 2),
 //   screen and (min-resolution: 192dpi),
