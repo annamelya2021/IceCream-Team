@@ -78,6 +78,9 @@
     &__button-icon{
         width: 15px;
         height: 15px;
+       
+        
+        
         
     }
     &__button{
@@ -85,7 +88,8 @@
         height: 40px;
         border-radius: 50%;
         border: none;
-        background-color: $white;
+        //background-color: $white;
+        color: $button-red-bc-hover;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -99,7 +103,8 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
-    &:focus {
+    &:focus
+     {
       background-color: $button-red-bc-hover;
       color: $white;
       
