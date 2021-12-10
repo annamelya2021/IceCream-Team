@@ -38,7 +38,11 @@
   &__icon {
     width: 32px;
     height: 32px;
-    fill: $second-text-color;
+
+    border-radius: 50%;
+    background-color: $second-text-color;
+    transition: background-color $duration $timing-function;
+
   }
 
   &__list:not(:last-child) {
@@ -47,7 +51,7 @@
 
   &__icon:focus,
   &__icon:hover {
-    fill: #d41443;
+    background-color: $button-red-bc-hover;
   }
 }
 
