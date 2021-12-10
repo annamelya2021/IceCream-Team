@@ -169,9 +169,13 @@
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
-
+    transition: background-color $duration $timing-function;
     &:hover,
     &:focus {
+      transform: scale(1.1);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
       background-color: $button-red-bc-hover;
     }
   }
@@ -185,9 +189,13 @@
     border: none;
     position: relative;
     cursor: pointer;
-
+    transition: background-color $duration $timing-function;
     &:hover,
     &:focus {
+      transform: scale(1.1);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
       background-color: $button-bc-hover;
     }
   }

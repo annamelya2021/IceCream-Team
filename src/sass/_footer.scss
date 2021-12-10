@@ -38,9 +38,11 @@
   &__icon {
     width: 32px;
     height: 32px;
+
     border-radius: 50%;
     background-color: $second-text-color;
     transition: background-color $duration $timing-function;
+
   }
 
   &__list:not(:last-child) {
@@ -56,9 +58,7 @@
 .footer-underline::after {
   content: '';
   display: inline-block;
-
   width: 100%;
-
   border: 1px solid #e1e1e1;
 }
 
