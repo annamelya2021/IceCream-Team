@@ -3,6 +3,10 @@
   background-color: $bc-hero;
   padding-top: 6px;
 
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    max-width: 480px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 34px;
     padding-top: 37px;
@@ -104,6 +108,10 @@
   padding-bottom: 171px;
   background-color: $bg-mobile-menu;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 40vw;
+  }
 }
 
 .burger-menu.is-open {
