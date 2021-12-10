@@ -169,7 +169,7 @@
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
-
+    transition: background-color $duration $timing-function;
     &:hover,
     &:focus {
       background-color: $button-red-bc-hover;
@@ -185,7 +185,7 @@
     border: none;
     position: relative;
     cursor: pointer;
-
+    transition: background-color $duration $timing-function;
     &:hover,
     &:focus {
       background-color: $button-bc-hover;
