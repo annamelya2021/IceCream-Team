@@ -96,6 +96,7 @@
   font-family: inherit;
   display: inline-block;
   text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 19px;
@@ -322,9 +323,8 @@
 
 .description-thumb__button {
   font-size: 10px;
-  width: 26px;
-  height: 26px;
-  display: inline-block;
+  width: 18px;
+  height: 18px;
   background-color: $white;
   border: none;
   border-radius: 50%;
@@ -332,12 +332,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $button-red-bc-hover;
+  // color: $button-red-bc-hover;
+  fill: $button-red-bc-hover;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: $white;
-    background-color: $button-red-bc-hover;
+    fill: $button-red-bc-hover;
+    background-color: $button-bc-hover;
   }
 
   @media screen and (min-width: 1200px) {
@@ -346,12 +348,7 @@
   }
 }
 
-.description-thumb__button-img {
-  width: 18px;
-  height: 18px;
-
-  @media screen and (min-width: 1200px) {
-    width: 26px;
-    height: 26px;
-  }
+.decription-thumb__arrow {
+  width: 10px;
+  height: 10px;
 }
