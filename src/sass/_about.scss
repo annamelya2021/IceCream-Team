@@ -31,14 +31,14 @@
 .splash {
   background-image: url(../images/advantages/splash1x.png);
   display: inline-flex;
-  min-height: 200px;
+  min-height: 100%;
   width: 100vw;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  bottom: 115px;
+  bottom: -355px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -57,9 +57,9 @@
 
 @media screen and (min-width: 1279px) {
   .splash {
-    height: 534px;
+    height: auto;
     display: block;
-    bottom: -30px;
+    bottom: -203px;
 
     background-image: url(../images/advantages/desksplash1x.png);
   }
